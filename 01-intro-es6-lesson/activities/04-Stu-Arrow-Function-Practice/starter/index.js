@@ -10,7 +10,7 @@ var funnyCase = (string) => {
 
 // Prints `yOu cAn't jUsT Do wHaTeVeR YoU WaNt aLl tHe tImE!`
 console.log(funnyCase("You can't just do whatever you want all the time!"));
-console.log("====================")
+console.log("====================");
 
 // --------------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ var doubled = map(numbers, (element) => {
 console.log(doubled);
 //note that the original array is unchanged:
 console.log(numbers);
-console.log("====================")
+console.log("====================");
 
 // --------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ var evenNumbers = filter(numbers, (currentElement) => {
 console.log(evenNumbers);
 //note that the original array is unchanged:
 console.log(numbers);
-console.log("====================")
+console.log("====================");
 // --------------------------------------------------------------------------
 
 // 4. netflixQueue is an object for managing your netflix queue
@@ -67,22 +67,22 @@ var netflixQueue = {
     "Mr. Nobody",
     "The Matrix",
     "Eternal Sunshine of the Spotless Mind",
-    "Fight Club"
+    "Fight Club",
   ],
-  watchMovie: () => {
+  watchMovie: function () {
     this.queue.pop();
   },
-  addMovie: (movie) => {
+  addMovie: function (movie) {
     this.queue.unshift(movie);
   },
-  printQueue: () => {
+  printQueue: function () {
     var list = "";
     for (var i = this.queue.length - 1; i >= 0; i--) {
       var currentMovie = this.queue[i];
-      list += (this.queue.length - i) + ". " + currentMovie + "\n";
+      list += this.queue.length - i + ". " + currentMovie + "\n";
     }
     console.log(list);
-  }
+  },
 };
 
 console.log("Printing movie queue!\n");
