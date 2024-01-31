@@ -1,0 +1,12 @@
+{
+  "name": "08-stu-package-npm",
+  "version": "1.0.0",
+  "description": "Implement the following user story:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
